@@ -1,5 +1,5 @@
 /* eslint-env node */
-require("@rushstack/eslint-patch/modern-module-resolution");
+require("@rushstack/eslint-patch/modern-module-resolution")
 module.exports = {
   root: true,
   extends: [
@@ -18,4 +18,15 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
-};
+  rules: {
+    "prettier/prettier": [
+      "warn",
+      {
+        semi: false,
+        endOfLine: "auto",
+        vueIndentScriptAndStyle: true,
+      },
+    ],
+    camelcase: [2],
+  },
+}
