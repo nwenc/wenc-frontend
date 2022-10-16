@@ -1,0 +1,10 @@
+name: Check
+
+on:
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  CI:
+    uses: Nymphxyz/wenc-frontend/.github/workflows/ci.yml@dev

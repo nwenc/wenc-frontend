@@ -1,0 +1,18 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  CI:
+    uses: Nymphxyz/wenc-frontend/.github/workflows/ci.yml@dev
+  CD:
+    needs: CI
+    uses: Nymphxyz/wenc-frontend/.github/workflows/cd.yml@dev
+    secrets:
+      DEV_SERVER_HOST: ${{ secrets.DEV_SERVER_HOST }}
+      DEV_SERVER_USERNAME: ${{ secrets.DEV_SERVER_USERNAME }}
+      DEV_SERVER_DEPLOY_KEY: ${{ secrets.DEV_SERVER_DEPLOY_KEY }}
+      DEV_SERVER_DESTINATION: ${{ secrets.DEV_SERVER_DESTINATION }}
