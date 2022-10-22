@@ -44,7 +44,7 @@
     "@storybook/testing-library": "^0.0.13",
     "@storybook/vue3": "^6.5.12",
     "@types/jsdom": "^20.0.0",
-    "@types/node": "^16.11.56",
+    "@types/node": "^18.11.3",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
