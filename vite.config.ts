@@ -14,6 +14,9 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
 const vitestConfig: VitestUserConfigInterface = {
   test: {
     environment: "jsdom",
+    deps: {
+      inline: ["element-plus"],
+    },
   },
 }
 
