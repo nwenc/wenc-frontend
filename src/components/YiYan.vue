@@ -15,10 +15,10 @@
     <el-tooltip effect="dark" content="点击左键复制" :show-after="1000">
       <div>
         <el-row justify="center">
-          <el-col :span="6">「 {{ props.content }} 」</el-col>
+          <el-col>「 {{ props.content }} 」</el-col>
         </el-row>
         <el-row justify="center">
-          <el-col :span="6">
+          <el-col>
             <span class="yiyan-source">-- {{ props.source }}</span>
           </el-col>
         </el-row>
