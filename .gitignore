@@ -18,6 +18,7 @@ coverage
 /cypress/screenshots/
 
 components.d.ts
+auto-imports.d.ts
 
 # Editor directories and files
 .vscode/*
