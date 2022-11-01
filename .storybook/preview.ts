@@ -1,9 +1,12 @@
 import { app } from '@storybook/vue3';
-import ElementPlus from 'element-plus';
+import { Quasar } from "quasar"
 import { createI18n } from 'vue-i18n';
 import zhcn from "../src/languages/zh-cn"
 import enau from "../src/languages/en-au"
-import 'element-plus/dist/index.css';
+
+import "quasar/dist/quasar.css"
+import "@quasar/extras/material-icons/material-icons.css"
+import "../src/assets/main.css"
 
 const messages = {
   zhcn,
@@ -17,7 +20,7 @@ const i18n = createI18n({
 })
 
 app.use(i18n)
-app.use(ElementPlus)
+app.use(Quasar)
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

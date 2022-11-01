@@ -16,18 +16,17 @@
 
 <template>
   <div class="yiyan" v-on:click="handleCopyToClipboard">
-    <el-tooltip effect="dark" :content="clickToCopy" :show-after="1000">
-      <div>
-        <el-row justify="center">
-          <el-col>「 {{ props.content }} 」</el-col>
-        </el-row>
-        <el-row justify="center">
-          <el-col>
-            <span class="yiyan-source">-- {{ props.source }}</span>
-          </el-col>
-        </el-row>
+    <div>
+      <div class="row items-center">
+        <div class="col">「 {{ props.content }} 」</div>
       </div>
-    </el-tooltip>
+      <div class="row items-center">
+        <div class="col">
+          <span class="yiyan-source">-- {{ props.source }}</span>
+        </div>
+      </div>
+      <q-tooltip :delay="1000"> {{ clickToCopy }} </q-tooltip>
+    </div>
   </div>
 </template>
 
