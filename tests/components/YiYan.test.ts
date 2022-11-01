@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest"
-import { mount } from "@vue/test-utils"
+import { mount } from "../TestHelper"
 import YiYan from "../../src/components/YiYan.vue"
 
 describe("<YiYan/>", () => {

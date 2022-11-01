@@ -1,10 +1,14 @@
 <script setup lang="ts">
+  import { useI18n } from "vue-i18n"
+
   export interface YiYanProps {
     content: string
     source?: string
   }
 
   const props = defineProps<YiYanProps>()
+  const { t } = useI18n()
+  const clickToCopy = t("yiYan.clickToCopy")
 
   const handleCopyToClipboard = () =>
     navigator.clipboard.writeText(props.content + " -- " + props.source)
@@ -12,7 +16,7 @@
 
 <template>
   <div class="yiyan" v-on:click="handleCopyToClipboard">
-    <el-tooltip effect="dark" content="点击左键复制" :show-after="1000">
+    <el-tooltip effect="dark" :content="clickToCopy" :show-after="1000">
       <div>
         <el-row justify="center">
           <el-col>「 {{ props.content }} 」</el-col>

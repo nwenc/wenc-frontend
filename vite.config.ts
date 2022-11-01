@@ -17,6 +17,7 @@ const vitestConfig: VitestUserConfigInterface = {
     deps: {
       inline: ["element-plus"],
     },
+    setupFiles: ["./tests/setup.ts"],
   },
 }
 
