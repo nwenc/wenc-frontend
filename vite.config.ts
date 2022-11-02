@@ -14,9 +14,6 @@ import { quasar, transformAssetUrls } from "@quasar/vite-plugin"
 const vitestConfig: VitestUserConfigInterface = {
   test: {
     environment: "jsdom",
-    deps: {
-      inline: ["element-plus"],
-    },
     setupFiles: ["./tests/setup.ts"],
   },
 }
