@@ -40,7 +40,7 @@
     "@quasar/vite-plugin": "^1.2.3",
     "@rushstack/eslint-patch": "^1.1.4",
     "@storybook/addon-actions": "^6.5.13",
-    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.12",
     "@storybook/addon-links": "^6.5.12",
     "@storybook/builder-vite": "^0.2.4",
