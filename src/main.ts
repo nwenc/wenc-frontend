@@ -9,7 +9,6 @@ import enau from "./languages/en-au"
 
 import "quasar/dist/quasar.css"
 import "@quasar/extras/material-icons/material-icons.css"
-import "./assets/main.css"
 
 const messages = {
   zhcn,
