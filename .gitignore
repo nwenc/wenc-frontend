@@ -20,6 +20,8 @@ coverage
 components.d.ts
 auto-imports.d.ts
 
+storybook-static
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
